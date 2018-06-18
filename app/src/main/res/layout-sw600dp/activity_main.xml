@@ -10,8 +10,8 @@
 
     <android.support.constraint.ConstraintLayout
         android:id="@+id/mainLayoutBox"
-        android:layout_width="300dp"
-        android:layout_height="500dp"
+        android:layout_width="500dp"
+        android:layout_height="850dp"
         android:background="#ffffff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -21,8 +21,8 @@
 
         <ImageView
             android:id="@+id/imageViewBoxBacking"
-            android:layout_width="297dp"
-            android:layout_height="497dp"
+            android:layout_width="497dp"
+            android:layout_height="847dp"
             android:focusable="true"
             android:focusableInTouchMode="true"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -33,20 +33,20 @@
 
         <android.support.constraint.ConstraintLayout
             android:id="@+id/layoutPower"
-            android:layout_width="53dp"
-            android:layout_height="33dp"
+            android:layout_width="78dp"
+            android:layout_height="78dp"
             android:background="@android:color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.95"
+            app:layout_constraintHorizontal_bias="0.88"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.90">
+            app:layout_constraintVertical_bias="0.92">
 
             <ToggleButton
                 android:id="@+id/toggleButtonPower"
-                android:layout_width="50dp"
-                android:layout_height="30dp"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
                 android:background="#9d9494"
                 android:textOff=" "
                 android:textOn=" "
@@ -59,14 +59,15 @@
 
         <TextView
             android:id="@+id/textViewPower"
-            android:layout_width="75dp"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="Power"
             android:textColor="@android:color/white"
+            android:textSize="24sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintHorizontal_bias="0.95"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.82" />
@@ -127,34 +128,35 @@
 
         <TextView
             android:id="@+id/textViewMute"
-            android:layout_width="75dp"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="No Interrupt"
             android:textColor="@android:color/white"
+            android:textSize="24sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.666"
+            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.819" />
+            app:layout_constraintVertical_bias="0.82" />
 
         <android.support.constraint.ConstraintLayout
             android:id="@+id/layoutMute"
-            android:layout_width="53dp"
-            android:layout_height="33dp"
+            android:layout_width="78dp"
+            android:layout_height="78dp"
             android:background="@android:color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.65"
+            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.9">
+            app:layout_constraintVertical_bias="0.92">
 
             <ToggleButton
                 android:id="@+id/toggleButtonMute"
-                android:layout_width="50dp"
-                android:layout_height="30dp"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
                 android:background="#9d9494"
                 android:textOff=" "
                 android:textOn=" "
@@ -172,17 +174,18 @@
             android:gravity="center"
             android:text="Volume"
             android:textColor="@android:color/white"
+            android:textSize="24sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.295" />
+            app:layout_constraintVertical_bias="0.253" />
 
         <com.rey.material.widget.Slider
             android:id="@+id/sliderMainVolume"
             android:layout_width="0dp"
-            android:layout_height="20dp"
+            android:layout_height="75dp"
             android:gravity="center"
             android:keepScreenOn="true"
             android:padding="16dp"
@@ -193,30 +196,31 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.35"
+            app:layout_constraintVertical_bias="0.307"
             app:sl_alwaysFillThumb="true"
             app:sl_maxValue="100"
             app:sl_primaryColor="@android:color/holo_blue_bright"
             app:sl_secondaryColor="@android:color/holo_blue_bright"
-            app:sl_thumbFocusRadius="8dp"
-            app:sl_thumbRadius="8dp"
+            app:sl_thumbFocusRadius="16dp"
+            app:sl_thumbRadius="12dp"
             app:sl_thumbTouchRadius="12dp"
-            app:sl_trackSize="2dp"
+            app:sl_trackSize="4dp"
             app:sl_value="0" />
 
         <TextView
             android:id="@+id/textViewFrequency"
-            android:layout_width="150dp"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="Frequency"
             android:textColor="@android:color/white"
+            android:textSize="24sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.09"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.10" />
+            app:layout_constraintVertical_bias="0.099" />
 
         <TextView
             android:id="@+id/textViewSource"
@@ -225,40 +229,43 @@
             android:gravity="center"
             android:text="Source"
             android:textColor="@android:color/white"
+            android:textSize="24sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.05"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.82" />
 
         <EditText
             android:id="@+id/editTextFreq"
-            android:layout_width="125dp"
-            android:layout_height="wrap_content"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
             android:backgroundTint="@android:color/white"
             android:ems="10"
             android:gravity="center"
             android:inputType="numberDecimal"
             android:textColor="@android:color/white"
             android:textColorHighlight="@android:color/white"
+            android:textSize="24sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.091"
+            app:layout_constraintHorizontal_bias="0.09"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.147" />
+            app:layout_constraintVertical_bias="0.14" />
 
         <ImageView
             android:id="@+id/imageViewPcLogo"
-            android:layout_width="248dp"
-            android:layout_height="160dp"
+            android:layout_width="419dp"
+            android:layout_height="302dp"
             android:src="@drawable/pclogo"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.626" />
+            app:layout_constraintVertical_bias="0.59" />
 
         <TextView
             android:id="@+id/textViewAppName"
@@ -267,52 +274,54 @@
             android:gravity="center"
             android:text="Tone Generator Pure"
             android:textColor="@android:color/white"
+            android:textSize="30sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.033" />
+            app:layout_constraintVertical_bias="0.01999998" />
 
         <TextView
             android:id="@+id/textViewNote"
-            android:layout_width="150dp"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="Note"
             android:textColor="@android:color/white"
+            android:textSize="24sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintHorizontal_bias="0.91"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.10" />
+            app:layout_constraintVertical_bias="0.099" />
 
         <Spinner
             android:id="@+id/spinnerHarmonicNote"
-            android:layout_width="125dp"
-            android:layout_height="wrap_content"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
             android:entries="@array/spinnerNotes"
             android:popupBackground="@android:color/black"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.908"
+            app:layout_constraintHorizontal_bias="0.91"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.159" />
+            app:layout_constraintVertical_bias="0.14" />
 
         <Spinner
             android:id="@+id/spinnerSource"
-            android:layout_width="125dp"
-            android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
             android:entries="@array/spinnerSource"
             android:popupBackground="@android:color/black"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.091"
+            app:layout_constraintHorizontal_bias="0.045"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.882" />
+            app:layout_constraintVertical_bias="0.9" />
 
     </android.support.constraint.ConstraintLayout>
 
